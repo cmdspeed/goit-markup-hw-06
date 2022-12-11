@@ -22,23 +22,29 @@
             <form name="order">
                 <h2 class="header-form">Zostaw swoje dane w formularzu poniżej</h2>
 
-                <label for="name" class="label_style">Imie</label>
-                <input name="imie" id="name" type="text" class="input_form">
+                <label class="label_style ">Imie
+                    <input name="imie" type="text" class="input_form">
+                </label>
 
-                <label for="phone" class="label_style">Telefon</label>
-                <input name="telefon" id="phone" type="tel" class="input_form">
+                <label class="label_style">Telefon
+                    <input name="telefon" type="tel" class="input_form">
+                </label>
 
-                <label for="email" class="label_style">Email</label>
-                <input name="email" id="email" type="email" class="input_form">
+                <label class="label_style">Email
+                    <input name="email" type="email" class="input_form">
+                </label>
 
-                <label for="comment" class="label_style">Komentarz</label>
-                <input name="komentarz" id="comment" type="text" placeholder="Wprowadź tekst" class="input_form">
+                <label class="label_style">Komentarz
+                    <textarea name="Komentarz" rows="5" placeholder="Wprowadź tekst"
+                        class="input_form comment"></textarea>
+                </label>
 
                 <label>
                     <input type="checkbox" name="regulamin" value="regulamin" />
                     Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
                 </label>
 
+                <button type="submit" class="form_send_button">Wyślij</button>
 
             </form>
         </div>
