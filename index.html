@@ -23,14 +23,24 @@
                 <h2 class="header-form">Zostaw swoje dane w formularzu poniżej</h2>
 
                 <label class="label_style ">Imie
-                    <input name="imie" type="text" class="input_form">
+                    <svg width="18" height="18" class="icon_form">
+                        <use href="/images/icons.svg#name"></use>
+                    </svg>
+                    <input name="name" type="text" class="input_form">
+
                 </label>
 
                 <label class="label_style">Telefon
-                    <input name="telefon" type="tel" class="input_form">
+                    <svg width="18" height="18" class="icon_form">
+                        <use href="/images/icons.svg#phone2"></use>
+                    </svg>
+                    <input name="tel" type="tel" class="input_form">
                 </label>
 
                 <label class="label_style">Email
+                    <svg width="18" height="18" class="icon_form">
+                        <use href="/images/icons.svg#email"></use>
+                    </svg>
                     <input name="email" type="email" class="input_form">
                 </label>
 
@@ -39,9 +49,16 @@
                         class="input_form comment"></textarea>
                 </label>
 
-                <label>
-                    <input type="checkbox" name="regulamin" value="regulamin" />
-                    Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+                <label class="label_policy">
+
+                    <input type="checkbox" name="regulamin" value="regulamin" class="policy_box" checked />
+                    <svg width="16" height="15" class="box">
+                        <use href="/images/icons.svg#checked" class="chbox"></use>
+                    </svg>
+
+
+                    Oświadczam iż akceptuję <a href="#" class="link_policy">Regulamin</a> i <a href="#"
+                        class="link_policy">Politykę Prywatności.</a>
                 </label>
 
                 <button type="submit" class="form_send_button">Wyślij</button>

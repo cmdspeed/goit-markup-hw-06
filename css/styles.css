@@ -593,6 +593,7 @@ figure {
     font-size: 12px;
     line-height: 1.16;
     color: var(--contacts-color);
+    position: relative;
 }
 
 .input_form {
@@ -601,12 +602,13 @@ figure {
     height: 40px;
     width: 100%;
     margin-bottom: 10px;
-    padding: 12px 16px;
+    padding: 12px 35px;
 }
 
 .comment {
     resize: none;
     height: 120px;
+    padding: 12px 10px;
 }
 
 .form_send_button {
@@ -623,4 +625,40 @@ figure {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+}
+
+.icon_form {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    display: block;
+    padding-top: 3px;
+}
+
+.label_policy {
+    color: var(--contacts-color);
+}
+
+.link_policy {
+    color: var(--logo-color);
+}
+
+.policy_box {
+    appearance: none;
+}
+
+.box {
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.chbox {
+    fill: #fff;
+    stroke: #212121;
+}
+
+.policy_box:checked {
+    /* nie wiem */
 }
