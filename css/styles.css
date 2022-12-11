@@ -589,14 +589,14 @@ figure {
     margin: 40px 40px 12px;
 }
 
-.label_style {
+.label-style {
     font-size: 12px;
     line-height: 1.16;
     color: var(--contacts-color);
     position: relative;
 }
 
-.input_form {
+.input-form {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
@@ -611,7 +611,7 @@ figure {
     padding: 12px 10px;
 }
 
-.form_send_button {
+.form-send-button {
     display: flex;
     margin: 30px auto 40px;
     text-align: center;
@@ -628,7 +628,7 @@ figure {
     cursor: pointer;
 }
 
-.icon_form {
+.icon-form {
     display: flex;
     position: absolute;
     top: 25px;
@@ -637,15 +637,15 @@ figure {
     padding-top: 3px;
 }
 
-.label_policy {
+.label-policy {
     color: var(--contacts-color);
 }
 
-.link_policy {
+.link-policy {
     color: var(--logo-color);
 }
 
-.policy_box {
+.policy-box {
     appearance: none;
 }
 
@@ -659,6 +659,44 @@ figure {
     stroke: #212121;
 }
 
-.policy_box:checked {
+.policybox:checked {
     /* nie wiem */
+}
+
+.input-footer-email {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-section);
+    color: var(--contacts-footer-color);
+    height: 50px;
+    width: 100%;
+    min-width: 358px;
+}
+
+.dp-flex {
+    display: flex;
+}
+
+.button-singin {
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--second-color);
+    font-size: 16px;
+    line-height: 1.87;
+    padding: 10px 76px 10px 42px;
+    margin: auto auto auto 12px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.send-svg {
+    position: relative;
+    top: 12px;
+    right: 52px;
 }
