@@ -596,6 +596,21 @@ figure {
     position: relative;
 }
 
+.input-form:hover,
+.input-form:focus {
+    border: 1px solid var(--logo-color);
+    outline: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.label-style:hover .icon-form,
+.label-style:focus .icon-form {
+    fill: var(--logo-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
 .input-form {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -633,12 +648,14 @@ figure {
     position: absolute;
     top: 25px;
     left: 12px;
-    display: block;
     padding-top: 3px;
 }
 
 .label-policy {
     color: var(--contacts-color);
+    font-size: 14px;
+    line-height: 1.71;
+    margin: 20px 15px 0 15px;
 }
 
 .link-policy {
@@ -654,13 +671,15 @@ figure {
     border-radius: 2px;
 }
 
-.chbox {
-    fill: #fff;
-    stroke: #212121;
+.policy-box:checked~.box {
+    fill: var(--logo-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
-.policybox:checked {
-    /* nie wiem */
+.box {
+    fill: #fff;
+    stroke: #212121;
 }
 
 .input-footer-email {
@@ -668,10 +687,16 @@ figure {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--footer-section);
-    color: var(--contacts-footer-color);
     height: 50px;
     width: 100%;
     min-width: 358px;
+}
+
+.input-footer-email::placeholder {
+    color: var(--contacts-footer-color);
+    font-size: 12px;
+    line-height: 1.16;
+    padding: 15px 0 15px 16px;
 }
 
 .dp-flex {
