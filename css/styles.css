@@ -682,6 +682,14 @@ figure {
     stroke: #212121;
 }
 
+.box:hover {
+    opacity: 0.6;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+
+}
 .input-footer-email {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -691,18 +699,15 @@ figure {
     width: 100%;
     min-width: 358px;
 }
-
 .input-footer-email::placeholder {
     color: var(--contacts-footer-color);
     font-size: 12px;
     line-height: 1.16;
     padding: 15px 0 15px 16px;
 }
-
 .dp-flex {
     display: flex;
 }
-
 .button-singin {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -719,7 +724,6 @@ figure {
     min-width: 200px;
     cursor: pointer;
 }
-
 .send-svg {
     position: relative;
     top: 12px;
