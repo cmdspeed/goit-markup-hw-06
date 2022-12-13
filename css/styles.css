@@ -706,7 +706,6 @@ figure {
     font-size: 16px;
     line-height: 1.87;
     padding: 10px 76px 10px 42px;
-    margin: auto auto auto 12px;
     min-width: 200px;
     cursor: pointer;
 }
@@ -714,7 +713,7 @@ figure {
 .send-svg {
     position: relative;
     top: 12px;
-    right: 52px;
+    left: 185px;
 }
 
 .input-form:hover,
