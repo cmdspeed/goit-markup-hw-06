@@ -707,6 +707,7 @@ figure {
     line-height: 1.87;
     padding: 10px 76px 10px 42px;
     min-width: 200px;
+    margin-left: -12px;
     cursor: pointer;
 }
 
