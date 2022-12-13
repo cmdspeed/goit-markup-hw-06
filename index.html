@@ -22,45 +22,46 @@
             <form name="order">
                 <h2 class="header-form">Zostaw swoje dane w formularzu poniżej</h2>
 
-                <label class="label-style ">Imie
+                <div class="label-div"><label class="label-style" for="id-name">Imie</label>
+
+                    <input name="name" id="id-name" type="text" class="input-form">
                     <svg width="18" height="18" class="icon-form">
                         <use href="images/icons.svg#name"></use>
                     </svg>
-                    <input name="name" type="text" class="input-form">
 
-                </label>
+                </div>
 
-                <label class="label-style">Telefon
-                    <svg width="18" height="18" class="icon-form">
-                        <use href="images/icons.svg#phone2"></use>
-                    </svg>
-                    <input name="tel" type="tel" class="input-form">
-                </label>
 
-                <label class="label-style">Email
-                    <input name="email" type="email" class="input-form">
-                    <svg width="18" height="18" class="icon-form">
-                        <use href="images/icons.svg#email"></use>
-                    </svg>
+                <label class="label-style" for="id-tel">Telefon</label>
+                <input name="tel" type="tel" id="id-tel" class="input-form">
+                <svg width="18" height="18" class="icon-form">
+                    <use href="images/icons.svg#phone2"></use>
+                </svg>
 
-                </label>
 
-                <label class="label-style">Komentarz
-                    <textarea name="Komentarz" rows="5" placeholder="Wprowadź tekst"
-                        class="input-form comment"></textarea>
-                </label>
 
-                <label class="label-policy">
+                <label class="label-style" for="id-email">Email</label>
+                <input name="email" type="email" id="id-email" class="input-form">
+                <svg width="18" height="18" class="icon-form">
+                    <use href="images/icons.svg#email"></use>
+                </svg>
 
-                    <input type="checkbox" name="policy" value="regulamin" class="policy-box" />
+
+
+
+
+                <label class="label-style" for="id-comment">Komentarz</label>
+                <textarea name="comment" id="id-comment" rows="5" placeholder="Wprowadź tekst" class="input-form comment"></textarea>
+
+
+                <label class="label-policy" for="id-label-policy">
+
+                    <input type="checkbox" name="policy" id="id-label-policy" value="regulamin" class="policy-box" />
 
                     <svg width="16" height="15" class="box">
                         <use href="images/icons.svg#checked" class="chbox"></use>
-                    </svg>
-
-
-                    Oświadczam iż akceptuję <a href="#" class="link-policy">Regulamin</a>
-                    i <a href="#" class="link-policy">Politykę Prywatności.</a>
+                    </svg> Oświadczam iż akceptuję <a href="#" class="link-policy">Regulamin</a> i <a href="#"
+                        class="link-policy">Politykę Prywatności.</a>
                 </label>
 
                 <button type="submit" class="form-send-button">Wyślij</button>

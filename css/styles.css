@@ -596,21 +596,6 @@ figure {
     position: relative;
 }
 
-.input-form:hover,
-.input-form:focus {
-    border: 1px solid var(--logo-color);
-    outline: none;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-
-.label-style:hover .icon-form,
-.label-style:focus .icon-form {
-    fill: var(--logo-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-
 .input-form {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -645,8 +630,8 @@ figure {
 
 .icon-form {
     display: flex;
-    position: absolute;
-    top: 25px;
+    position: relative;
+    bottom: 40px;
     left: 12px;
     padding-top: 3px;
 }
@@ -730,4 +715,19 @@ figure {
     position: relative;
     top: 12px;
     right: 52px;
+}
+
+.input-form:hover,
+.input-form:focus {
+    border: 1px solid var(--logo-color);
+    outline: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.label-div:hover,
+.input-form:focus+.icon-form {
+    fill: var(--logo-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
